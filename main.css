@@ -186,11 +186,15 @@ color:yellow;
 	color:green;
 }
 
-#qone {
-	height:300px;
-	width:300px;
-	background-color:blue;
-	display:none;
+#addAnswer {
+	width:100px;
+	height:50px;
+	border-radius:25px;	
+	background-color:red;
+	border-radius:50px;
+	float:right;
+	margin-top:-150px;
+	
 }
 
 .panel1 {
@@ -205,6 +209,11 @@ color:yellow;
 	margin-top:100px;
 }
 
+.panel1 .panelText {
+	color:red;
+	background-color:yellow;
+
+}
 .panel2 {
 	width:600px;
 	height:400px;
@@ -238,24 +247,6 @@ color:yellow;
 	margin-top:100px;
 }
 
-
-#meter {
-	width:200px;
-	height:200px;
-	background-color:green;
-	border-radius:200px;
-	line-height:200px;
-	text-align:center;
-	float:right;
-	margin-right: 100px;
-	margin-top:180px;
-	vertical-align: center;
-	font-family: cursive;
-	font-size:22px;
-	font-weight: bold;
-}
-
-
 #answerButton {
 	height:50px;
 	width:50px;
@@ -277,70 +268,6 @@ color:yellow;
 
 
 
-
-
-#listItem{
-	border: 2px solid silver;
-	width:150px;
-	height:25px;
-	margin-top:10px;
-	margin-left:47px;
-	float:left;
-
-}
-
-
-
-#removeItem {
-	width:50px;
-	height:50px;
-	border-radius:50px;
-	background-color:red;
-	float:right;
-	margin-right:10px;
-	margin-top:20px;
-	display:none;
-}
-
-#saleItem {
-	width:50px;
-	height:50px;
-	border-radius:50px;
-	background-color:yellow;
-	clear:both;
-	float:right;
-	margin-top:20px;
-	margin-right:10px;
-	display:none;
-}
-
-#saleItem:hover {
-	background-color:green;
-}
-
-
-#list {
-	color:black;
-}
-
-#list li {
-	font-size:33px;
-	font-family: cursive;
-}
-
-.strike {
-	text-decoration: line-through;
-	color:yellow;
-}
-
-
-
-.deleteItem {
-	height:20px;
-	width:20px;
-	margin-left:30px;
-
-}
 
 
 
