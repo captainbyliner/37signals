@@ -1,64 +1,60 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>37 Signals Clone</title>
+	<title>Quiz App</title>
 	<link rel="stylesheet" type="text/css" a href="main.css">
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-	<script type="text/javascript" src="application.js"></script>
-</head>
+	</head>
 <body>
-<nav>
-	<ul class="rightnav">
-		<li><a href:"www.donaldmcarthur.com">Company Blog</a></li>
-		<li><a href:"www.donaldmcarthur.com">Our Story</a></li>
-		<li><a href:"www.donaldmcarthur.com">Follow Us On Twitter</a></li>
-		<li><a href:"www.donaldmcarthur.com">System Status</a></li>
-		<li id="sign-in"><a class="sign-in-blink" href:"www.donaldmcarthur.com">Sign In</a></li>
-	</ul>
-	<p class="leftnav">Happy Wednesday.</p>
+	<nav>
+		<ul class = "rightnav">
+			<li><a href = "https://twitter.com/captainbyliner">Twitter</a></li>
+			<li><a href = "https://www.facebook.com/donald.mcarthur.391">Facebook</a></li>
+			<li><a href = "https://plus.google.com/u/0/106873279136712568068/posts">Google+</a></li>
+			<li><a href = "https://github.com/captainbyliner">GitHub</a></li>
+			<li><a href = "http://donaldmcarthur.com/">donaldmcarthur.com</a></li>
+		</ul>
+			<img id ="checker" src="http://www.golfnewsnow.ca/wp-content/uploads/2009/01/titleist_prov1_09.jpg">
+			<img id ="checkerb" src="http://www.golfnewsnow.ca/wp-content/uploads/2009/01/titleist_prov1_09.jpg">
+			<img id ="checkerc" src="http://www.golfnewsnow.ca/wp-content/uploads/2009/01/titleist_prov1_09.jpg">
+	</nav>
+	<div class = "container">
+		<div id = "meter">Next Question</div>
+		<div class ="panel">
+				<p class = "panelText">The Great Golf Quiz:</p>	
+				<p class = "panelDeck">Is your knowledge up to par?</p>
+				<button id ="playButton">Tee It Up</button>
+		</div>
+			<div class ="panel1">
+				<p class = "panelText">Question #1:</p>	
+				<p class = "panelDeck">How many majors has Jack Nicklaus won?</p>	
+				<input type="radio" id = "answerButton" title="A: 18 Majors"><label id ="answerLabel">A: 18 Majors</label>
+				<input type="radio" id = "answerButton" title="B: 14 Majors"><label id = "answerLabel">B: 14 Majors</label>
+				<input type="radio" id = "answerButton" title="C: 12 Majors"><label id = "answerLabel">C: 12 Majors</label>
+				<input type="radio" id = "answerButton" title="D: 8 Majors"><label id = "answerLabel">D: 8 Majors</label>
+			</div>
 
-<div class="container">
-	<img id="logocenter" src="1logos.jpg">
-	<h1>Making collaboration productive and enjoyable for people everyday.</h1>
-	<h2>Frustration-free web-based apps for collaboration, sharing information and making decisions.</h2>
-<div class="middlestrip">
-	<div class="middlebox">
-		<img id="boxpic" src="http://37signals.com/images/logo-bc.png">
-		<div class="boxhead">Basecamp<span id="trademarks">&reg;</span></div>
-		<div class="boxheadred">Manage Projects</div>
-		<div class="boxgraph">Used by millions for project management</div>
-		<img id="arrow-left" src="http://37signals.com/images/arrow-left.png">
+			<div class ="panel2">
+				<p>The Quick Brown Fox</p>
+			</div>
+			<div class ="panel3">
+				<p class = "panelText">Question #1:</p>	
+				<p class = "panelDeck">How many majors has Jack Nicklaus won?</p>	
+				<input type="radio" id = "answerButton" title="A: 18 Majors"><label id ="answerLabel">A: 18 Majors</label>
+				<input type="radio" id = "answerButton" title="B: 14 Majors"><label id = "answerLabel">B: 14 Majors</label>
+				<input type="radio" id = "answerButton" title="C: 12 Majors"><label id = "answerLabel">C: 12 Majors</label>
+				<input type="radio" id = "answerButton" title="D: 8 Majors"><label id = "answerLabel">D: 8 Majors</label>
+			</div>
+			<div class ="panel4">
+				<p class = "panelText">Question #1:</p>	
+				<p class = "panelDeck">How many majors has Jack Nicklaus won?</p>	
+				<input type="radio" id = "answerButton" title="A: 18 Majors"><label id ="answerLabel">A: 18 Majors</label>
+				<input type="radio" id = "answerButton" title="B: 14 Majors"><label id = "answerLabel">B: 14 Majors</label>
+				<input type="radio" id = "answerButton" title="C: 12 Majors"><label id = "answerLabel">C: 12 Majors</label>
+				<input type="radio" id = "answerButton" title="D: 8 Majors"><label id = "answerLabel">D: 8 Majors</label>
+			</div>
 
-		
 	</div>
-
-	<div class="middlebox1">
-		<img id="boxpic" src="http://37signals.com/images/logo-hr.png">
-		<div class="boxhead">Highrise<span id="trademarks">&reg;</span></div>
-		<div class="boxheadred">Manage Contacts</div>
-		<div class="boxgraph">Know the people you do business with</div>
-		<img id="arrow-lefta" src="http://37signals.com/images/arrow-left.png">
-
-		
-	</div>
-	<div class="middlebox2">
-		<img id="boxpic" src="http://37signals.com/images/logo-cf.png">
-		<div class="boxhead">Campfire<span id="trademarks">&trade;</span></div>
-		<div class="boxheadred">Work in Real-Time</div>
-		<div class="boxgraph">Group Chat Rooms for your business</div>
-		<img id="arrow-right" src="http://37signals.com/images/arrow-right.png">
-		
-	</div>
-	</div>
-	<div class="stars">&#10035;&#10035;&#10035;</div>
-
-	
-
-</div>
-
-	
-
-</nav>
-
 </body>
+	<script type="text/javascript" src="application.js"></script>
 </html>
