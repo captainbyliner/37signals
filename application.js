@@ -29,15 +29,12 @@ function displayQuestion(key) {
 	var question = questions[key];
 
 	$("#questionDeck").text(question.text);
-	$("#answerWrapper").css("background-color", "black");
-	$("#answerWrapper").text(question.answers);
-
 
 	$("#answers").empty();
 
-	for (var answerKey = 0, totalAnswers = question.answers.length);
+	for (var answerKey = 0, totalAnswers = question.answers.length;
 		answerKey < totalAnswers;
-		answerKey++
+		answerKey++)
 
     {
     	var answer = question.answers[answerKey];
@@ -48,38 +45,32 @@ function displayQuestion(key) {
 	}
 }
 
+
 $(document).ready(function() {
 
-	displayQuestion(questionKey);
-})
+   $("#addAnswer").on('click', function() {
 
-	$("#addAnswer").on('click', function (){
+      	var selectedAnswer = $("#answers input[type='radio']:checked").val;
 
-		questionKey--;
-		if (questionKey < 0) {
-			questionKey = 0;
-		}
-
-		displayQuestion(questionKey);
-
-	});
-
-
-   
-   $("#addAnswer).on('click', function() {
-   		var selectedAnswer = $("#answers input[type='radio']:checked").val;
-   })
-
-   
-    
- 	var question = questions[questionKey];
+   		var question = questions[questionKey];
 
  		if (selectedAnswer == questions.correctAnswer) {
  			console.log("You are correct");
  		} else {
  			console.log("Nope, you are wrong");
  		}
+
+ 		questionKey--;
+		if (questionKey < 0) {
+			questionKey = 0;
+		}
+
+		displayQuestion(questionKey);
    
     });    
-});
 
+ });
+
+
+    
+    
