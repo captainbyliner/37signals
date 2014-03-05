@@ -134,27 +134,24 @@ color:yellow;
 	margin-left:auto;
 	margin-top:100px;
 	color:white;
-	background-color:black;
-}
-
-.panelText {
-	font-size:55px;
-	font-family:cursive;
-	color:white;
-	text-align:center;
-	margin-top:50px;
-	font-weight:bold;
-
+	background-color:yellow;
 }
 
 #answerWrapper {
 	width:500px;
 	height:200px;
-	background-color:red;
+	background-color:blue;
 	opacity:1;
 	margin-right:auto;
 	margin-left:auto;
 	margin-top:50px;
+}
+
+#answers {
+background-color:green;
+font-size:44px;
+float:left;
+line-height:50px;
 }
 
 #questionWrapper{
@@ -165,6 +162,7 @@ color:yellow;
 	 text-align: center;
 	 height:39px;
 	 width:600px;
+	 background-color:red;
 
 }
 
@@ -181,50 +179,11 @@ color:yellow;
 	font-weight:bold;
 	color:black;
 	text-align:center;
+	background-color:silver;
 }
 
 #questionDeck:hover {
-	color:white;
-}
-
-.panelText:hover {
-	color:black;
 	background-color:white;
-}
-
-.panelDeck { 
-	font-size:33px;
-	font-family:cursive;
-	font-weight:bold;
-	color:white;
-	text-align:center;
-	margin-top:50px;
-	display:none;
-	
-}
-
-.panelDeck:hover {
-	color:black;
-	background-color:white;
-}
-
-#playButton {
-	width:100px;
-	height:100px;	
-	background-color:green;
-	border-radius:50px;
-	margin-top:50px;
-	margin-right:auto;
-	margin-left: auto;
-	font-size:22px;
-	font-weight: bold;
-	font-family: cursive;
-	display:none;
-}
-
-#playButton:hover {
-	background-color:black;
-	color:green;
 }
 
 #addAnswer {
@@ -237,136 +196,3 @@ color:yellow;
 	font-size:22px;
 	
 }
-
-#addAnswer1 {
-	width:100px;
-	height:100px;
-	border-radius:50px;	
-	background-color:white;
-	float:right;
-	margin-top:-150px;
-	font-size:22px;
-	
-}
-
-#addAnswer2 {
-	width:100px;
-	height:100px;
-	border-radius:50px;	
-	background-color:white;
-	float:right;
-	margin-top:-150px;
-	font-size:22px;
-	
-}
-#addAnswer3 {
-	width:100px;
-	height:100px;
-	border-radius:50px;	
-	background-color:white;
-	float:right;
-	margin-top:-150px;
-	font-size:22px;
-}
-
-#addAnswer4 {
-	width:100px;
-	height:100px;
-	border-radius:50px;	
-	background-color:white;
-	float:right;
-	margin-top:-150px;
-	font-size:22px;
-	
-}
-
-.panel1 {
-	width:600px;
-	height:400px;
-	margin-right:auto;
-	margin-left:auto;
-	color:white;
-	background-color:green;
-	display:none;
-	opacity:.9;
-	margin-top:100px;
-}
-
-
-.panel2 {
-	width:600px;
-	height:400px;
-	margin-right:auto;
-	margin-left:auto;
-	color:white;
-	background-color:orange;
-	opacity:.9;
-	margin-top:100px;
-	display:none;
-}
-
-.panel3 {
-	width:600px;
-	height:400px;
-	margin-right:auto;
-	margin-left:auto;
-	color:white;
-	background-color:purple;
-	opacity:.9;
-	margin-top:100px;
-	display:none;
-}
-
-.panel4 {
-	width:600px;
-	height:400px;
-	margin-right:auto;
-	margin-left:auto;
-	color:white;
-	background-color:DeepSkyBlue;
-	opacity:.9;
-	margin-top:100px;
-	display:none;
-}
-
-.panel5 {
-	width:600px;
-	height:400px;
-	margin-right:auto;
-	margin-left:auto;
-	color:white;
-	background-color:Magenta;
-	opacity:.9;;
-	margin-top:100px;
-	display:none;
-}
-
-.panel6 {
-	width:600px;
-	height:400px;
-	margin-right:auto;
-	margin-left:auto;
-	color:white;
-	background-color:yellow;
-	opacity:.9;;
-	margin-top:100px;
-	display:none;
-}
-
-#answerButton {
-	height:50px;
-	width:50px;
-	margin-bottom:50px;
-
-}
-
-
-
-
-
-
-
-
-
-
- 
