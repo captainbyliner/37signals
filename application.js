@@ -1,76 +1,79 @@
+$(document).ready(function(){
+	$(".middlebox").mouseenter(function(){
+		$("h1").addClass("hhover");
+		$("h1").html("<span class ='blue'>Basecamp</span> is the project management tool you wish you had on your last project.");
+		$("h2").addClass("hovera");
+		$("h2").html("Are you still managing projects with email? Are you still using Excel for your to-do lists? It's time to upgrade to Basecamp. Manage projects and collaborate with your team and clients the modern way.");
+	});
+	$(".middlebox").mouseleave(function(){
+		$("h1").removeClass("hhover");
+		$("h1").html("Making collaboration productive and enjoyable for people every day.");
+		$("h2").removeClass("hovera");
+		$("h2").html("Frustration-free web-based apps for collaboration, sharing information, and making decisions.");
+
+	});
+	$(".middlebox1").mouseenter(function(){
+		$("h1").addClass("hhover");
+		$("h1").html("<span class='blue'>Highrise</span> remembers the important things about people you'd normally forget.");
+		$("h2").addClass("hovera");
+		$("h2").html("Keep a permanent record of people you do business with. Know who you talked to, when you talked to them, what was said, and when to follow up next. Over 20,000,000 contacts are tracked using Highrise");
+	});
+	$(".middlebox1").mouseleave(function(){
+		$("h1").removeClass("hhover");
+		$("h1").text("Making collaboration productive and enjoyable for people every day.");
+		$("h2").removeClass("hovera");
+		$("h2").text("Frustration-free web-based apps for collaboration, sharing information, and making decisions");
+
+	});
+	$(".middlebox2").mouseenter(function(){
+		$("h1").addClass("hhover");
+		$("h1").html("From near or far, <span class ='blue'>Campfire</span> helps teams work together over the web in real-time");
+		$("h2").addClass("hovera");
+		$("h2").html("Share ideas, discussions, concepts, images, code samples, videos, mockups and documents in a real-time private chat room. It's game changing. We couldn't run our own business without campfire.");
 
 
-var questions = [{
-	text: 'How many majors did Jack Nicklaus win?',
-	answers: ['18 Majors', '14 Majors', '19 Majors', '16 Majors'],
-	correctAnswer: 0
-},{
-	text: 'What is the highest recorded Par 4 score in a PGA Tour event?',
-	answers: ['12', '16', '15', '18'],
-	correctAnswer:1
-},{
-	text: 'Who has won the most British Open titles?',
-	answers: ['Tiger Woods', 'Harry Vardon', 'Tom Watson', 'Old Tom Morris'],
-	correctAnswer:1
-},{
-	text: 'Who said "The only thing a golfer needs is more sunlight?"',
-	answers: ['Raymond Floyd', 'Tom Watson', 'Bagger Vance', 'Ben Hogan'],
-	correctAnswer:3
-},{
-	text: 'What is the maximum number of clubs a golfer can carry?',
-	answers:['12', '15', '14', '16'],
-	correctAnswer:2
-}];
+	});
+	$(".middlebox2").mouseleave(function(){
+		$("h1").removeClass("hhover");
+		$("h1").text("Making collaboration productive and enjoyable for people every day.");
+		$("h2").removeClass("hovera");
+		$("h2").text("Frustration-free web-based apps for collaboration, sharing information, and making decisions");
+	})
 
-var questionKey = 0;
+$(".middlebox").mouseenter(function(){
+	$("#arrow-left").fadeTo("fast", 1);
 
-function displayQuestion(key) {
+});
 
-	var question = questions[key];
+$(".middlebox").mouseleave(function(){
+	$("#arrow-left").fadeTo("fast", 0);
 
-	$("#questionDeck").text(question.text);
+});
 
-	$("#answers").empty();
+$(".middlebox1").mouseenter(function(){
+	$("#arrow-lefta").fadeTo("fast", 1);
 
-	for (var answerKey = 0, totalAnswers = question.answers.length;
-		answerKey < totalAnswers;
-		answerKey++)
+});
 
-    {
-    	var answer = question.answers[answerKey];
+$(".middlebox1").mouseleave(function(){
+	$("#arrow-lefta").fadeTo("fast", 0);
 
- 	$("#answers").append("<li><input type='radio' name ='answers'" + 
- 						 "value='" + answerKey + "')/> " + answer + "</li>");
-        
-	}
-}
+});
+
+$(".middlebox2").mouseenter(function(){
+	$("#arrow-right").fadeTo("fast", 1);
+	
+});
+
+$(".middlebox2").mouseleave(function(){
+	$("#arrow-right").fadeTo("fast", 0);
+
+});
+
+});
 
 
-$(document).ready(function() {
-
-   $("#addAnswer").on('click', function() {
-
-      	var selectedAnswer = $("#answers input[type='radio']:checked").val;
-
-   		var question = questions[questionKey];
-
- 		if (selectedAnswer == questions.correctAnswer) {
- 			console.log("You are correct");
- 		} else {
- 			console.log("Nope, you are wrong");
- 		}
-
- 		questionKey--;
-		if (questionKey < 0) {
-			questionKey = 0;
-		}
-
-		displayQuestion(questionKey);
-   
-    });    
-
- });
 
 
-    
-    
+
+
